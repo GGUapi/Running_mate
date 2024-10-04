@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.sport.NewSportFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_border"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="發起運動"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="16dp"
+                android:paddingHorizontal="16dp">
+
+                <EditText
+                    android:id="@+id/launch_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="標題"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/launch_sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_sports_24"
+                    android:drawablePadding="8dp"
+                    android:hint="運動類型"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/blue_border"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/launch_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/baseline_level_24"
+                        android:hint="運動程度"
+                        android:paddingVertical="12dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/level_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:entries="@array/level"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/launch_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_time_24"
+                    android:drawablePadding="8dp"
+                    android:hint="日期"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/launch_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_time_24"
+                    android:drawablePadding="8dp"
+                    android:hint="時間"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/launch_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_location_alt_24"
+                    android:drawablePadding="8dp"
+                    android:hint="地點"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/launch_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_people_24"
+                    android:drawablePadding="8dp"
+                    android:hint="需求人數"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/launch_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blue_border"
+                    android:drawableLeft="@drawable/baseline_note_24"
+                    android:drawablePadding="8dp"
+                    android:hint="備註"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/launch_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="送出"
+            android:textSize="24sp"
+            app:cornerRadius="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
